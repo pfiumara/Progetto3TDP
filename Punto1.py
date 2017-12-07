@@ -1,4 +1,7 @@
 from imported_xlrd import xlrd
+
+from imported_xlrd.xlrd.xldate import *
+
 import calendar
 
 from Campionato import Campionato
@@ -26,11 +29,13 @@ while contcamp!=nsheet:
             golcasaprimo=sheet.cell_value(j,8)
             golospiteprimo=sheet.cell_value(j,9)
             risultato=sheet.cell_value(j,7)
-            data=sheet.cell_value(j,1)
-            data=sheet.cell_value(j,2)
-            y, m, d, h, i, s = xlrd.xldate_as_tuple(data, book.datemode)
+        #    data=sheet.cell_value(j,1)
+         #   data=sheet.cell_value(j,2)
+            y, m, d, h, i, s = xldate_as_tuple(data, book.datemode)
+
             data="{0}/{1}/{2}".format(d, m, y)
             print("Data",data)
+            exit(1)
             campionato.set_partita(campionato.Partita(sqcasa,sqospite,golcasa,golospite,golcasaprimo,golospiteprimo,risultato,data,giornata))
     leagues.insert(contcamp,campionato)
     contcamp+=1
