@@ -1,3 +1,5 @@
+from TdP_collections.hash_table.chain_hash_map import ChainHashMap
+
 class Campionato():
 
     class Partita():
@@ -21,10 +23,9 @@ class Campionato():
     def __init__(self, nome): # Inizializzo Campionato
 
         self.nome = nome
-        self.partite = [] # Lista di partite
+        self.partite = ChainHashMap()
 
 
-      # self.squadre = squadre # Lista di squadre
 
 
     def get_nome(self):
@@ -33,7 +34,7 @@ class Campionato():
 
     def set_partita(self,partita): # Serve Per allocare la partita
 
-        self.partite.append(partita)
+        self.partite.__setitem__(partita,partita)
 
     def __contains__(self, item):
         if isinstance(item,self.Partita):
@@ -41,11 +42,24 @@ class Campionato():
         raise TypeError()
 
     def __getitem__(self, item):
-        if (item < len(self.partite)):
-            return self.partite.pop(item)
+        if (self.partite.__contains__(item)):
+            return self.partite.__getitem__(item)
         raise IndexError()
 
 
+
+    def print_partite(self):
+
+        for elem in self.partite.__iter__():
+
+            print(elem)
+
+
+    def print_campionato(self):
+
+        print("Campionato: ",self.nome)
+        print("Partite:")
+        self.print_partite()
 
     def print_partite(self):
 
