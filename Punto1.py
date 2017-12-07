@@ -26,11 +26,11 @@ while contcamp!=nsheet:
             golcasaprimo=sheet.cell_value(j,8)
             golospiteprimo=sheet.cell_value(j,9)
             risultato=sheet.cell_value(j,7)
-            cont+=1
-            if cont==((n/2)+1):
-                cont=0
-                giornata=giornata+1
             data=sheet.cell_value(j,1)
+            data=sheet.cell_value(j,2)
+            y, m, d, h, i, s = xlrd.xldate_as_tuple(data, book.datemode)
+            data="{0}/{1}/{2}".format(d, m, y)
+            print("Data",data)
             campionato.set_partita(campionato.Partita(sqcasa,sqospite,golcasa,golospite,golcasaprimo,golospiteprimo,risultato,data,giornata))
     leagues.insert(contcamp,campionato)
     contcamp+=1
