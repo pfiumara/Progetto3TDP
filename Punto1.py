@@ -26,9 +26,8 @@ while contcamp!=nsheet:
             risultato=sheet.cell_value(j,7)
             data=sheet.cell_value(j,2)
             y, m, d, h, i, s = xlrd.xldate_as_tuple(data, book.datemode)
-            data="{0} - {1} - {2}".format(d, m, y)
+            data="{0}/{1}/{2}".format(d, m, y)
             print("Data",data)
-            print ("Anno",data[0])
             campionato.set_partita(campionato.Partita(sqcasa,sqospite,golcasa,golospite,golcasaprimo,golospiteprimo,risultato,data,giornata))
     leagues.insert(contcamp,campionato)
     contcamp+=1
