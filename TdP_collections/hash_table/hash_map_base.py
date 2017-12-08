@@ -69,3 +69,6 @@ class HashMapBase(MapBase):
     self._n = 0                    # n recomputed during subsequent adds
     for (k,v) in old:
       self[k] = v                  # reinsert old key-value pair
+
+  def _getkey(self,k):
+      return k
