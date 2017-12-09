@@ -412,6 +412,53 @@ def Punto9(campionato,giornata,T):
             T.insert( INSERT, giornata )
             T.insert( INSERT, "\n" )
 
+def PuntoExtra(t,p,T):
+    def calculate_PI(p):
+        l = len( p )
+        pi = [0]
+        k = 0
+        for i in range( 1, l ):
+            while (k > 0 and p[k] != p[i]):
+                k = pi[k]
+            if (p[k] == p[i]):
+                k = k + 1
+            pi.append( k )
+            print ("pattern is: ", p)
+            print ("pi valori sono:", pi)
+
+    def KMP_Count(t, p):
+        n = len( t )
+        m = len( p )
+        pi = calculate_PI( p )
+        k = 0
+        cont = 0
+        for i in range( n ):
+            while (k > 0 and p[k] != t[i]):
+                if (pi is None):
+                    print("Pattern", p + "non trovato")
+                    T.insert(INSERT,"\n Pattern non trovato \n")
+                    return cont
+                k = pi[k]
+            if (p[k] == t[i]):
+                k = k + 1
+            if (k == m):
+                cont += 1
+                k = 0
+            else:
+                if (i == n - 1):
+                    return cont
+        return cont
+    print("Punto extra method")
+    T.insert(INSERT,"Pattern da cercare: ")
+    T.insert(INSERT,p)
+    T.insert(INSERT," In stringa: ")
+    T.insert(INSERT,t)
+    T.insert(INSERT,"\n")
+    T.insert( INSERT, "Conteggio= " )
+    T.insert(INSERT,KMP_Count(t,p))
+
+
+
 
 
 ######################### FINE METODI PUNTO 1-9
@@ -467,9 +514,6 @@ def finestra1(finestra):
 
 
     finestra.mainloop()
-
-
-
 
 
 def finestra2(finestra):
@@ -912,7 +956,47 @@ def finestra9(finestra):
 
     finestra.mainloop()
 
-#Creo la finestra ###################################
+def finestraextra(finestra):
+    def stampa():
+
+        T.delete( '1.0', END )
+
+        PuntoExtra( entry2.get(),entry.get(),T)
+
+
+
+    finestra.destroy()  # Distruggo la finestra principale
+
+    finestra = Tk()
+    # Assegno dimensioni e titolo
+    finestra.geometry( '580x500' )
+    finestra.title( "Punto Extra" )
+
+    # aggiungo elmenti
+
+    testo = Label( finestra, text="Punto Extra", fg="blue", font=("Helvetica", 16) ).place( x=100, y=0 )
+
+    # Entry
+    entry = Entry( finestra );
+    testo = Label( finestra, text="<-Scrivi qui Pattern" ).place( x=120, y=50 )
+    entry.place( x=0, y=50 )
+
+    entry2 = Entry( finestra );
+    testo = Label( finestra, text="<-Scrivi qui Stringa" ).place( x=400, y=50 )
+    entry2.place( x=250, y=50 )
+    bottone = Button( finestra, text="Stampa", command=stampa ).pack( side=LEFT )
+
+    T = Text( finestra, height=40, width=50 )
+    T.place( x=100, y=100 )
+
+    scroll = Scrollbar( finestra, command=T.yview )
+    T.configure( yscrollcommand=scroll.set )
+
+    scroll.place( x=500, y=100 )
+
+    finestra.mainloop()
+
+#Creo la finestra principale ###################################
 
 def finestraprincipale():
     finestra = Tk()
@@ -946,6 +1030,7 @@ def finestraprincipale():
     testo = Label(finestra,text="").grid(row=5,column=1) # Crea spazio vuoto
 
     testo = Label(finestra,text="Cliccare su un pulsante per svolgere il relativo punto",fg="blue",font=("Helvetica",8)).grid(row=6,column=1)
+    bottone10 = Button( finestra, text="EXTRA", font=("HELVETICA", 14), command=lambda: finestraextra( finestra ),bg="blue" ).grid( row=7, column=1 )
 
 #Avvio la finestra
 

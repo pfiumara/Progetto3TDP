@@ -23,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="interfaccia.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="interfaccia.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interfaccia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="325" column="34" lean-forward="false" selection-start-line="325" selection-start-column="34" selection-end-line="325" selection-end-column="34" />
+            <state relative-caret-position="136">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
                 <element signature="e#398#897#0" expanded="false" />
@@ -38,23 +38,27 @@
                 <element signature="e#6767#7955#0" expanded="false" />
                 <element signature="e#7989#9201#0" expanded="false" />
                 <element signature="e#9235#10509#0" expanded="false" />
-                <element signature="e#10551#13607#0" expanded="false" />
-                <element signature="e#13736#15015#0" expanded="false" />
-                <element signature="e#15050#16766#0" expanded="false" />
-                <element signature="e#16797#18513#0" expanded="false" />
-                <element signature="e#18543#20445#0" expanded="false" />
-                <element signature="e#20475#21531#0" expanded="false" />
-                <element signature="e#21562#23112#0" expanded="false" />
-                <element signature="e#23142#24692#0" expanded="false" />
-                <element signature="e#24722#26272#0" expanded="false" />
-                <element signature="e#26303#28021#0" expanded="false" />
-                <element signature="e#28108#29862#0" expanded="false" />
+                <element signature="e#13632#14877#0" expanded="false" />
+                <element signature="e#13661#13970#0" expanded="false" />
+                <element signature="e#14005#14618#0" expanded="false" />
+                <element signature="e#15012#16291#0" expanded="false" />
+                <element signature="e#16323#18039#0" expanded="false" />
+                <element signature="e#18070#19786#0" expanded="false" />
+                <element signature="e#19816#21718#0" expanded="false" />
+                <element signature="e#21748#22804#0" expanded="false" />
+                <element signature="e#22835#24385#0" expanded="false" />
+                <element signature="e#24415#25965#0" expanded="false" />
+                <element signature="e#25995#27545#0" expanded="false" />
+                <element signature="e#27576#29294#0" expanded="false" />
+                <element signature="e#29329#30353#0" expanded="false" />
+                <element signature="e#30451#32355#0" expanded="false" />
+                <marker date="1512812954677" expanded="false" signature="10546:13603" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prova.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="prova.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prova.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -117,7 +121,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+    <option name="x" value="-9" />
+    <option name="y" value="2" />
     <option name="width" value="980" />
     <option name="height" value="912" />
   </component>
@@ -269,8 +274,8 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12660669" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34811828" sideWeight="0.5025707" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27553764" sideWeight="0.4974293" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50537634" sideWeight="0.4974293" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -291,7 +296,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -471,12 +476,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prova.py">
+    <entry file="file://$PROJECT_DIR$/Punto1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding>
-            <element signature="e#0#66#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -489,20 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Punto1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interfaccia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="325" column="34" lean-forward="false" selection-start-line="325" selection-start-column="34" selection-end-line="325" selection-end-column="34" />
+        <state relative-caret-position="136">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
             <element signature="e#398#897#0" expanded="false" />
@@ -513,17 +508,31 @@
             <element signature="e#6767#7955#0" expanded="false" />
             <element signature="e#7989#9201#0" expanded="false" />
             <element signature="e#9235#10509#0" expanded="false" />
-            <element signature="e#10551#13607#0" expanded="false" />
-            <element signature="e#13736#15015#0" expanded="false" />
-            <element signature="e#15050#16766#0" expanded="false" />
-            <element signature="e#16797#18513#0" expanded="false" />
-            <element signature="e#18543#20445#0" expanded="false" />
-            <element signature="e#20475#21531#0" expanded="false" />
-            <element signature="e#21562#23112#0" expanded="false" />
-            <element signature="e#23142#24692#0" expanded="false" />
-            <element signature="e#24722#26272#0" expanded="false" />
-            <element signature="e#26303#28021#0" expanded="false" />
-            <element signature="e#28108#29862#0" expanded="false" />
+            <element signature="e#13632#14877#0" expanded="false" />
+            <element signature="e#13661#13970#0" expanded="false" />
+            <element signature="e#14005#14618#0" expanded="false" />
+            <element signature="e#15012#16291#0" expanded="false" />
+            <element signature="e#16323#18039#0" expanded="false" />
+            <element signature="e#18070#19786#0" expanded="false" />
+            <element signature="e#19816#21718#0" expanded="false" />
+            <element signature="e#21748#22804#0" expanded="false" />
+            <element signature="e#22835#24385#0" expanded="false" />
+            <element signature="e#24415#25965#0" expanded="false" />
+            <element signature="e#25995#27545#0" expanded="false" />
+            <element signature="e#27576#29294#0" expanded="false" />
+            <element signature="e#29329#30353#0" expanded="false" />
+            <element signature="e#30451#32355#0" expanded="false" />
+            <marker date="1512812954677" expanded="false" signature="10546:13603" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prova.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
