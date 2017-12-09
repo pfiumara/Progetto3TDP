@@ -11,13 +11,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Punto1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Punto1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Punto1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-453">
-              <caret line="321" column="0" lean-forward="true" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+            <state relative-caret-position="209">
+              <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interfaccia.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interfaccia.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="325" column="34" lean-forward="false" selection-start-line="325" selection-start-column="34" selection-end-line="325" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#398#897#0" expanded="false" />
+                <element signature="e#939#2399#0" expanded="false" />
+                <element signature="e#2443#4316#0" expanded="false" />
+                <element signature="e#4458#6064#0" expanded="false" />
+                <element signature="e#6093#6733#0" expanded="false" />
+                <element signature="e#6767#7955#0" expanded="false" />
+                <element signature="e#7989#9201#0" expanded="false" />
+                <element signature="e#9235#10509#0" expanded="false" />
+                <element signature="e#10551#13607#0" expanded="false" />
+                <element signature="e#13736#15015#0" expanded="false" />
+                <element signature="e#15050#16766#0" expanded="false" />
+                <element signature="e#16797#18513#0" expanded="false" />
+                <element signature="e#18543#20445#0" expanded="false" />
+                <element signature="e#20475#21531#0" expanded="false" />
+                <element signature="e#21562#23112#0" expanded="false" />
+                <element signature="e#23142#24692#0" expanded="false" />
+                <element signature="e#24722#26272#0" expanded="false" />
+                <element signature="e#26303#28021#0" expanded="false" />
+                <element signature="e#28108#29862#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -38,8 +69,8 @@
       <file leaf-file-name="Campionato.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Campionato.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="5" column="113" lean-forward="true" selection-start-line="5" selection-start-column="113" selection-end-line="5" selection-end-column="113" />
+            <state relative-caret-position="171">
+              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -59,6 +90,17 @@
       <find>SC0</find>
       <find>punto1</find>
       <find>aspe</find>
+      <find>punto 5</find>
+      <find>AGAH</find>
+      <find>punto5</find>
+      <find>inter</find>
+      <find>24/04/</find>
+      <find>24/04/2016</find>
+      <find>24/4</find>
+      <find>24/04</find>
+      <find>22/10/2016 22/10/2016</find>
+      <find>21/05/2017</find>
+      <find>ECCO I</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,14 +109,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Campionato.py" />
         <option value="$PROJECT_DIR$/TdP_collections/hash_table/hash_map_base.py" />
+        <option value="$PROJECT_DIR$/Campionato.py" />
         <option value="$PROJECT_DIR$/Punto1.py" />
+        <option value="$PROJECT_DIR$/interfaccia.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="106" />
+    <option name="x" value="-8" />
     <option name="width" value="980" />
     <option name="height" value="912" />
   </component>
@@ -103,17 +146,6 @@
               <item name="Progetto3TDP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Progetto3TDP" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Progetto3TDP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Progetto3TDP" type="462c0819:PsiDirectoryNode" />
-              <item name="TdP_collections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Progetto3TDP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Progetto3TDP" type="462c0819:PsiDirectoryNode" />
-              <item name="TdP_collections" type="462c0819:PsiDirectoryNode" />
-              <item name="hash_table" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -133,6 +165,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\GitHub\Progetto3TDP" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\piero\PycharmProjects\Progetto3Gruppo7" />
     </key>
@@ -149,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Punto1">
+  <component name="RunManager" selected="Python.interfaccia">
     <configuration name="Campionato" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,14 +219,33 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="2">
+    <configuration name="interfaccia" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files\Python\Python36-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Progetto3Gruppo7" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interfaccia.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.Punto1" />
       <item index="1" class="java.lang.String" itemvalue="Python.Campionato" />
+      <item index="2" class="java.lang.String" itemvalue="Python.interfaccia" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.Punto1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Campionato" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.interfaccia" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Punto1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Campionato" />
       </list>
     </recent_temporary>
   </component>
@@ -210,16 +264,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12660669" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24059139" sideWeight="0.5025707" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4974293" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34811828" sideWeight="0.5025707" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27553764" sideWeight="0.4974293" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919356" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38037634" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -235,7 +290,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -406,6 +463,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Program Files/Python/Python36-32/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="1698" column="0" lean-forward="false" selection-start-line="1698" selection-start-column="0" selection-end-line="1698" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/prova.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -418,18 +483,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Campionato.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="5" column="113" lean-forward="true" selection-start-line="5" selection-start-column="113" selection-end-line="5" selection-end-column="113" />
+        <state relative-caret-position="171">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Punto1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-453">
-          <caret line="321" column="0" lean-forward="true" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaccia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="325" column="34" lean-forward="false" selection-start-line="325" selection-start-column="34" selection-end-line="325" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#398#897#0" expanded="false" />
+            <element signature="e#939#2399#0" expanded="false" />
+            <element signature="e#2443#4316#0" expanded="false" />
+            <element signature="e#4458#6064#0" expanded="false" />
+            <element signature="e#6093#6733#0" expanded="false" />
+            <element signature="e#6767#7955#0" expanded="false" />
+            <element signature="e#7989#9201#0" expanded="false" />
+            <element signature="e#9235#10509#0" expanded="false" />
+            <element signature="e#10551#13607#0" expanded="false" />
+            <element signature="e#13736#15015#0" expanded="false" />
+            <element signature="e#15050#16766#0" expanded="false" />
+            <element signature="e#16797#18513#0" expanded="false" />
+            <element signature="e#18543#20445#0" expanded="false" />
+            <element signature="e#20475#21531#0" expanded="false" />
+            <element signature="e#21562#23112#0" expanded="false" />
+            <element signature="e#23142#24692#0" expanded="false" />
+            <element signature="e#24722#26272#0" expanded="false" />
+            <element signature="e#26303#28021#0" expanded="false" />
+            <element signature="e#28108#29862#0" expanded="false" />
           </folding>
         </state>
       </provider>

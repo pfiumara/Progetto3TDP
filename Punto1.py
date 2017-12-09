@@ -201,9 +201,11 @@ def Punto5(data):
 
     print("\n\n\n\nPunto 5 method  \n")
 
-    for elem in campionati:
+    for elem in campionati.__iter__():
+
         for elem in campionati.__getitem__( elem ).partite:      ## VISITA DI TUTTE LE PARTITE DI TUTTI I CAMPIONATI
             if(data==elem.data): print(elem,elem.data)
+            print(elem, elem.data)
 
 
 

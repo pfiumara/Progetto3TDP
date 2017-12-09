@@ -24,7 +24,7 @@ class Campionato():
 
         self.nome = nome
         self.partite = ChainHashMap()
-
+        self.ngiornate=0
 
 
 
