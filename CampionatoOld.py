@@ -16,7 +16,7 @@ class Campionato():
             self.giornata = giornata # n° giornata
 
         def __str__(self):
-            return (self.sqcasa + " - " + self.sqospite + " RIS = "+str(self.golcasa)+"-"+str(self.golospite)+" Giornata="+str(self.giornata))
+            return (self.sqcasa + " - " + self.sqospite + " RIS = "+str(self.golcasa)+"-"+str(self.golospite))
 
         def __lt__(self,partita):
             return self.giornata < partita.giornata
@@ -26,7 +26,7 @@ class Campionato():
     def __init__(self, nome): # Inizializzo Campionato
 
         self.nome = nome
-        self.partite = list()
+        self.partite = ChainHashMap()
         self.ngiornate=0
         self.nsquadre=0
         self.squadre=0
@@ -39,7 +39,7 @@ class Campionato():
 
     def set_partita(self,partita): # Serve Per allocare la partita
 
-        self.partite.append(partita)
+        self.partite.__setitem__(partita,partita)
 
     def __contains__(self, item):
         if isinstance(item,self.Partita):

@@ -6,6 +6,7 @@ import operator
 from TdP_collections.hash_table.chain_hash_map import ChainHashMap
 from TdP_collections.hash_table.probe_hash_map import ProbeHashMap
 import calendar
+
 from Campionato import Campionato
 
 
@@ -18,11 +19,19 @@ def Punto1(campionato,T):
     T.insert(INSERT,"\n")
 
     squadre = set()
+
+
     for elem in campionati.__getitem__(campionato).partite:
 
+
+
         if(elem.giornata==1):   # OTTIMIZZAZIONE (ESEGUO L'ADD SOLO PER UNA GIORNATA E NON PER TUTTE )
+
             squadre.add(elem.sqcasa)
             squadre.add(elem.sqospite)
+        if(squadre.__len__()==campionati.__getitem__(campionato).nsquadre):   break  # Esco dal ciclo appena raggiungo il num di squadre
+
+
 
     for elem in squadre:
         print(elem)
@@ -65,6 +74,12 @@ def Punto2(campionato,giornata,T):
             if(elem.risultato=="A"):
 
                 classifica[elem.sqospite]+=3
+
+        else: break  # Ottimizzazione
+
+
+
+
 
 
 
@@ -123,6 +138,8 @@ def Punto3(campionato,giornata,T):
             if (elem.golospiteprimo>elem.golcasaprimo):
                 classifica[elem.sqospite] += 3
 
+        if(elem.giornata>giornata): break # ottimizzazione
+
 
     print("Classifica Ordinata")
     #  items.sort( key=itemgetter( 1 ), reverse=True )
@@ -180,6 +197,8 @@ def Punto4(campionato,squadra,giornata,T):  #Inserito anche campionato poichè t
             T.insert( INSERT, "\n" )
             cont+=1
 
+        elif(elem.giornata>giornata): break #ottimizzazione
+
     if(cont==0): T.insert( INSERT, "Squadra non esistente" )
 
 
@@ -232,6 +251,8 @@ def Punto6(giornata,k,T):
 
                 else: classifica[elem.sqospite]+=elem.golospite
 
+            if(elem.giornata>giornata): break #ottimizzazione
+
     classificaordinata = sorted( classifica.items(), key=operator.itemgetter( 1 ), reverse=True )
     i = 0
     for elem in classificaordinata.__iter__():
@@ -270,6 +291,8 @@ def Punto7(giornata,k,T):
 
                 else: classifica[elem.sqospite]+=elem.golcasa
 
+            if (elem.giornata > giornata): break  # ottimizzazione
+
     classificaordinata = sorted( classifica.items(), key=operator.itemgetter( 1 ), reverse=False )
     i = 0
     for elem in classificaordinata.__iter__():
@@ -307,6 +330,8 @@ def Punto8(giornata,k,T):
                 if (not elem.sqospite in classifica.keys()): classifica[elem.sqospite]=elem.golospite-elem.golcasa
 
                 else: classifica[elem.sqospite]+=(elem.golospite-elem.golcasa)
+
+            if (elem.giornata > giornata): break  # ottimizzazione
 
     classificaordinata = sorted( classifica.items(), key=operator.itemgetter( 1 ), reverse=True )
     i = 0
@@ -361,6 +386,10 @@ def Punto9(campionato,giornata,T):
 
                 classifica[elem.sqospite] += 1
                 classificatrasf[elem.sqospite] += 1
+
+        if (elem.giornata > giornata): break  # ottimizzazione
+
+
 
     classificaordinata = sorted( classifica.items(), key=operator.itemgetter( 1 ), reverse=True )
     classificaordinatacasa = sorted( classificacasa.items(), key=operator.itemgetter( 1 ), reverse=True )
@@ -646,11 +675,11 @@ def finestra4(finestra):
     finestra = Tk()
     # Assegno dimensioni e titolo
     finestra.geometry( '800x500' )
-    finestra.title( "Punto5" )
+    finestra.title( "Punto4" )
 
     # aggiungo elmenti
 
-    testo = Label( finestra, text="Punto5", fg="blue", font=("Helvetica", 16) ).place( x=100, y=0 )
+    testo = Label( finestra, text="Punto4", fg="blue", font=("Helvetica", 16) ).place( x=100, y=0 )
 
     # Combobox
 
@@ -1057,9 +1086,12 @@ while contcamp!=nsheet:
     k+=1
     squadre=set()
     for j in range(1,sheet.nrows):
-        for i in range (2,4):
+        for i in range (3,4):
             squadre.add(sheet.cell_value(j,i))
+
+
     n=squadre.__len__()
+    campionati.__getitem__( campionato.get_nome() ).nsquadre=n  #Conto le squadre
     cont=0
     giornata=1
     for j in range(1,sheet.nrows):
@@ -1079,9 +1111,19 @@ while contcamp!=nsheet:
             data="{0}/{1}/{2}".format(d, m, y)
         #    print("Data",data)
             if(giornata>campionato.ngiornate): campionato.ngiornate=giornata
+
+
             campionato.set_partita(campionato.Partita(sqcasa,sqospite,golcasa,golospite,golcasaprimo,golospiteprimo,risultato,data,giornata))
+
     leagues.insert(contcamp,campionato)
     contcamp+=1
+
+   # campionati.__getitem__( campionato.get_nome() ).partite.sort()
+
+
+for elem in campionati:  # ORDINO I CAMPIONATI PER RIORGANIZZARE GIORNATE RINVIATE
+    campionati[elem].partite.sort()
+
 
 
 
