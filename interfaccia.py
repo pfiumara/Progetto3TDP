@@ -4,10 +4,10 @@ from imported_xlrd import xlrd
 from imported_xlrd.xlrd.xldate import *
 import operator
 from TdP_collections.hash_table.chain_hash_map import ChainHashMap
-from TdP_collections.hash_table.probe_hash_map import ProbeHashMap
-import calendar
+
 
 from Campionato import Campionato
+
 
 
 ########################### METODI  PUNTO 1-9
@@ -96,8 +96,6 @@ def Punto2(campionato,giornata,T):
         T.insert(INSERT," Partite Giocate: ")
         T.insert(INSERT,giornata)
         T.insert(INSERT,"\n")
-
-
 
 
 def Punto3(campionato,giornata,T):
@@ -202,7 +200,6 @@ def Punto4(campionato,squadra,giornata,T):  #Inserito anche campionato poichè t
     if(cont==0): T.insert( INSERT, "Squadra non esistente" )
 
 
-
 def Punto5(data,T):
 
     print("\n\n\n\nPunto 5 method  \n")
@@ -225,7 +222,6 @@ def Punto5(data,T):
                 T.insert(INSERT,"\n")
 
     if(i==0):  T.insert(INSERT,"Non vi sono partite in questa data.")
-
 
 
 def Punto6(giornata,k,T):
@@ -268,7 +264,6 @@ def Punto6(giornata,k,T):
         if(i>k): break   #ottimizza
 
 
-
 def Punto7(giornata,k,T):
     print("\n\n\n\nPunto 7 method  \n")
     T.insert( INSERT, k )
@@ -306,7 +301,6 @@ def Punto7(giornata,k,T):
 
         i+=1
         if(i>k): break   #ottimizza
-
 
 
 def Punto8(giornata,k,T):
@@ -441,6 +435,7 @@ def Punto9(campionato,giornata,T):
             T.insert( INSERT, giornata )
             T.insert( INSERT, "\n" )
 
+
 def PuntoExtra(t,p,T):
     def compute_kmp_fail(p):
         m = len( p )
@@ -488,10 +483,6 @@ def PuntoExtra(t,p,T):
     T.insert(INSERT,"\n")
     T.insert( INSERT, "Conteggio= " )
     T.insert(INSERT,KMP_Count(t,p))
-
-
-
-
 
 ######################### FINE METODI PUNTO 1-9
 
