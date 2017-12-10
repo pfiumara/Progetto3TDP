@@ -29,7 +29,6 @@ class Campionato():
         self.partite = list()
         self.ngiornate=0
         self.nsquadre=0
-        self.squadre=0
 
 
 

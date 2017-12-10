@@ -1104,7 +1104,7 @@ while contcamp!=nsheet:
             sqospite=sheet.cell_value(j,4)
             golcasa=int(sheet.cell_value(j,5))
             golospite=int(sheet.cell_value(j,6))
-            golcasaprimo=(sheet.cell_value(j,8))   # va fattto il cast a intero ma prima va aggiustato il file (ci sn più prime giornate)
+            golcasaprimo=(sheet.cell_value(j,8))   # va fattto il cast a intero ma prima va aggiustato il file (elem vuoti)
 
             golospiteprimo=sheet.cell_value(j,9)
             risultato=sheet.cell_value(j,7)
