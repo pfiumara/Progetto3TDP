@@ -1,4 +1,3 @@
-from TdP_collections.hash_table.chain_hash_map import ChainHashMap
 
 class Campionato():
 
@@ -39,6 +38,8 @@ class Campionato():
     def set_partita(self,partita): # Serve Per allocare la partita
 
         self.partite.append(partita)
+
+
 
     def __contains__(self, item):
         if isinstance(item,self.Partita):

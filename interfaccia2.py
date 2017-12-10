@@ -173,7 +173,7 @@ def Punto4(campionato,squadra,giornata,T):  #Inserito anche campionato poichè t
                T.insert( INSERT, "Risultato: ", )
                T.insert( INSERT, elem.risultato )
                T.insert( INSERT, " Giornata: ", )
-               T.insert( INSERT, elem.giornata )
+               T.insert( INSERT, giornata )
                T.insert( INSERT, "\n" )
                cont+=1
 
@@ -191,7 +191,7 @@ def Punto4(campionato,squadra,giornata,T):  #Inserito anche campionato poichè t
             T.insert( INSERT, "Risultato: ", )
             T.insert( INSERT, elem.risultato )
             T.insert( INSERT, " Giornata: ", )
-            T.insert( INSERT, elem.giornata )
+            T.insert( INSERT, giornata )
             T.insert( INSERT, "\n" )
             cont+=1
 
@@ -1077,17 +1077,40 @@ while contcamp!=nsheet:
     campionato=Campionato(sheet.cell_value(k,1))
     campionati.__setitem__(campionato.get_nome(),campionato)
 
+    dict = {} # dizionario di appoggio utile alla riorganizzazione delle partite  [giornata,count]
+
+    giorn = 0 # variabile di appoggio utile per gestire il dict
+
     k+=1
     squadre=set()
     for j in range(1,sheet.nrows):
-        for i in range (3,4):
+
+         for i in range (3,4):
             squadre.add(sheet.cell_value(j,i))
+
+
+         for i in range(1):
+             if (int( sheet.cell_value( j, i ) ) > giorn):
+                 giorn = int( sheet.cell_value( j, i ) );  # alla fine dei due for giorn è il numero di giornate
+
+
+    for j in range(1,giorn):
+        dict[j]=0;
+
+
+
+
 
 
     n=squadre.__len__()
     campionati.__getitem__( campionato.get_nome() ).nsquadre=n  #Conto le squadre
     cont=0
     giornata=1
+
+
+
+
+
     for j in range(1,sheet.nrows):
             giornata = sheet.cell_value( j, 0 )
             data = sheet.cell_value( j, 2 )
@@ -1099,6 +1122,8 @@ while contcamp!=nsheet:
 
             golospiteprimo=sheet.cell_value(j,9)
             risultato=sheet.cell_value(j,7)
+            count=j
+
 
             y, m, d, h, i, s = xldate_as_tuple(data, book.datemode)
 
@@ -1106,8 +1131,15 @@ while contcamp!=nsheet:
         #    print("Data",data)
             if(giornata>campionato.ngiornate): campionato.ngiornate=giornata
 
+            if(j>1):
+              if(giornata <int(sheet.cell_value( count, 0 ))):  # se la giornata è minore della precedente la partita è rinviata (IDENTIFICO LA PARTITA RINVIATA)
 
-            campionato.set_partita(campionato.Partita(sqcasa,sqospite,golcasa,golospite,golcasaprimo,golospiteprimo,risultato,data,giornata))
+                  print("quaaa",giornata,(sheet.cell_value( count, 0 )))
+                  campionato.set_partita_inorder(campionato.Partita( sqcasa, sqospite, golcasa, golospite, golcasaprimo, golospiteprimo,risultato, data, giornata ) )
+              else : campionato.set_partita(campionato.Partita(sqcasa,sqospite,golcasa,golospite,golcasaprimo,golospiteprimo,risultato,data,giornata))
+
+
+            else : campionato.set_partita(campionato.Partita(sqcasa,sqospite,golcasa,golospite,golcasaprimo,golospiteprimo,risultato,data,giornata))
 
     leagues.insert(contcamp,campionato)
     contcamp+=1
@@ -1115,10 +1147,11 @@ while contcamp!=nsheet:
    # campionati.__getitem__( campionato.get_nome() ).partite.sort()
 
 
-for elem in campionati:  # ORDINO I CAMPIONATI PER RIORGANIZZARE GIORNATE RINVIATE
-    campionati[elem].partite.sort()
+#for elem in campionati:  # ORDINO I CAMPIONATI PER RIORGANIZZARE GIORNATE RINVIATE
+ #   campionati[elem].partite.sort()
 
-
+for elem in campionati:
+    print(campionati[elem].print_partite())
 
 
 print("\n\n################## PRESI TUTTI I VALORI ################### \n\n")

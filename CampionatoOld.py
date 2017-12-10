@@ -1,5 +1,5 @@
 from TdP_collections.hash_table.chain_hash_map import ChainHashMap
-
+import bisect
 class Campionato():
 
     class Partita():
@@ -16,7 +16,7 @@ class Campionato():
             self.giornata = giornata # n° giornata
 
         def __str__(self):
-            return (self.sqcasa + " - " + self.sqospite + " RIS = "+str(self.golcasa)+"-"+str(self.golospite))
+            return (self.sqcasa + " - " + self.sqospite + " RIS = "+str(self.golcasa)+"-"+str(self.golospite)+" Giornata="+str(self.giornata))
 
         def __lt__(self,partita):
             return self.giornata < partita.giornata
@@ -26,10 +26,9 @@ class Campionato():
     def __init__(self, nome): # Inizializzo Campionato
 
         self.nome = nome
-        self.partite = ChainHashMap()
+        self.partite = list()
         self.ngiornate=0
         self.nsquadre=0
-        self.squadre=0
 
 
 
@@ -39,7 +38,11 @@ class Campionato():
 
     def set_partita(self,partita): # Serve Per allocare la partita
 
-        self.partite.__setitem__(partita,partita)
+        self.partite.append(partita)
+
+    def set_partita_inorder(self,partita):
+
+            bisect.insort(self.partite,partita)
 
     def __contains__(self, item):
         if isinstance(item,self.Partita):
