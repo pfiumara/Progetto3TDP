@@ -442,30 +442,33 @@ def Punto9(campionato,giornata,T):
             T.insert( INSERT, "\n" )
 
 def PuntoExtra(t,p,T):
-    def calculate_PI(p):
-        l = len( p )
-        pi = [0]
+    def compute_kmp_fail(p):
+        m = len( p )
+        fail = [0] * m  # di default, fa una sovrapposizione di 0
+        j = 1
         k = 0
-        for i in range( 1, l ):
-            while (k > 0 and p[k] != p[i]):
-                k = pi[k]
-            if (p[k] == p[i]):
-                k = k + 1
-            pi.append( k )
-            print ("pattern is: ", p)
-            print ("pi valori sono:", pi)
+        while j < m:  # calcola f(j) durante questo passaggio, se non è zero
+            if p[j] == p[k]:  # k + 1 caratteri corrispondono
+                fail[j] = k + 1
+                j += 1
+                k += 1
+            elif k > 0:  # k seguono un riscontro di prefissi
+                k = fail[k - 1]
+            else:  # nessun uguaglianza trovata a j
+                j += 1
+        return fail
 
     def KMP_Count(t, p):
         n = len( t )
         m = len( p )
-        pi = calculate_PI( p )
+        pi = compute_kmp_fail( p )
         k = 0
         cont = 0
         for i in range( n ):
             while (k > 0 and p[k] != t[i]):
                 if (pi is None):
-                    print("Pattern", p + "non trovato")
-                    T.insert(INSERT,"\n Pattern non trovato \n")
+                    print( "Pattern", p + "non trovato" )
+                    T.insert( INSERT, "\n Pattern non trovato \n" )
                     return cont
                 k = pi[k]
             if (p[k] == t[i]):
